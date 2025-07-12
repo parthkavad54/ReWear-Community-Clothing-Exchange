@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Details</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <!-- <header>
+    <div class="navbar">
+      <h2 class="logo">Clothique</h2>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Sale</a>
+        <a href="#">Categories</a>
+        <a href="#">Get Pro</a>
+      </nav>
+    </div>
+  </header> -->
+
+  <main class="product-detail">
+    <div class="image-section">
+      <img src="/product-large-1.jpg" alt="Product Image" />
+    </div>
+    <div class="info-section">
+      <h1>Black Cotton T-Shirt</h1>
+      <p class="price"><span class="original">Rs24.00</span> <span class="discounted">$18.00</span> <span class="tag">25% OFF</span></p>
+      <p class="description">
+        This premium black cotton t-shirt is perfect for casual wear. Made with 100% organic cotton for comfort and breathability. Available in all sizes.
+      </p>
+      <ul class="details">
+        <li><strong>Material:</strong> 100% Cotton</li>
+        <li><strong>Size:</strong> S, M, L, XL</li>
+        <li><strong>Color:</strong> Black</li>
+        <li><strong>Category:</strong> Men's Casual</li>
+      </ul>
+        <div class="quantity-control">
+            <label for="quantity">Quantity:</label>
+            <button id="decrease">−</button>
+            <input type="number" id="quantity" value="1" min="1" />
+            <button id="increase">+</button>
+        </div>
+        <button class="buy-btn" id="add-to-cart">Add to Cart</button>
+    </div>
+
+    
+  </main>
+
+  <div class="main1">
+
+    <div class="container">
+    <button id="uploadBtn">SCAN OR UPLOAD PIC</button>
+    <input type="file" id="fileInput" accept="image/*" capture="environment" hidden />
+    
+    <div class="preview hidden" id="previewContainer">
+      <!-- Image will be shown here -->
+    </div>
+  </div>
+
+  <form action="/submit" method="POST">
+    <div class="A">
+      <p><strong>CONDITIONS</strong></p>
+      <label><input type="checkbox" name="condition[]" id="checkbox1" value="visible stains"> Visible Stains</label><br>
+      <label><input type="checkbox" name="condition[]"id="checkbox2" value="rips-holes-tears"> Rips / Holes / Tears</label><br>
+      <label><input type="checkbox" name="condition[]" id="checkbox3" value="fabric faded"> Fabric Faded</label><br>
+      <label><input type="checkbox" name="condition[]" id="checkbox4" value="not washed and clean"> Not Washed and Clean</label><br>
+      <label><input type="checkbox" name="condition[]" id="checkbox5" value="missing buttons"> Missing Buttons</label><br>
+    </div>
+
+    <div class="B">
+      <p><strong>FABRIC OF CLOTHES</strong></p>
+      <label><input type="checkbox" name="fabric[]" id="checkbox6" value="cotton"> Cotton</label><br>
+      <label><input type="checkbox" name="fabric[]"id="checkbox7" value="silk"> Silk</label>
+      <label><input type="checkbox" name="fabric[]"id="checkbox8" value="linen"> Linen</label><br>
+      <label><input type="checkbox" name="fabric[]" id="checkbox9" value="wool"> Wool</label>
+      <label><input type="checkbox" name="fabric[]" id="checkbox10" value="nylon"> Nylon</label><br>
+      <label><input type="checkbox" name="fabric[]" id="checkbox11" value="polyester"> Polyester</label>
+      <label><input type="checkbox" name="fabric[]" id="checkbox12" value="denim"> Denim</label><br>
+      <label><input type="checkbox" name="fabric[]" id="checkbox13" value="chiffon"> Chiffon</label>
+      <label><input type="checkbox" name="fabric[]" id="checkbox14" value="velvet"> Velvet</label><br>
+      <label><input type="checkbox" name="fabric[]" id="checkbox15" value="leather"> Leather</label>
+      <label><input type="checkbox" name="fabric[]" id="checkbox16" value="muslin"> Muslin</label><br>
+      <label><input type="checkbox" name="fabric[]" id="checkbox17" value="canvas"> Canvas</label>
+    </div>
+
+    <fieldset>
+      <legend><strong>CLOTHING TYPE</strong></legend>
+      <label><input type="checkbox" name="type[]" id="checkbox18" value="Shirt"> Shirt</label><br>
+      <label><input type="checkbox" name="type[]" id="checkbox19" value="Pants"> Pants</label><br>
+      <label><input type="checkbox" name="type[]" id="checkbox20" value="Jacket"> Jacket</label><br>
+      <label><input type="checkbox" name="type[]" id="checkbox21" value="Dress"> Dress</label><br>
+      <label><input type="checkbox" name="type[]" id="checkbox22" value="Skirt"> Skirt</label><br>
+      <label><input type="checkbox" name="type[]" id="checkbox23" value="Accessories"> Accessories</label><br>
+    </fieldset>
+
+    <div class="C">
+      <p><strong>WHY SHOULD WE EXCHANGE CLOTHES?</strong></p>
+      🌍 Eco-friendly – Reduces waste and pollution.<br>
+      💸 Saves money – Get new clothes without spending.<br>
+      👚 More variety – Refresh wardrobe with unique styles.<br>
+      🤝 Builds community – Encourages sharing and connection.<br>
+      🚫 Less fast fashion – Reduces overconsumption and unethical production.
+    </div>
+
+    <h3 id="total">Total coin: 0</h3>
+
+    <button type="submit">Submit Condition</button>
+  </form>
+
+  
+  
+</div>
+  <script src="script.js"></script>
+  <script src="script1.js"></script>
+  <script src="checkbox.js"></script>
+</body>
+</html>

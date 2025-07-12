@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wishlist</title>
+  <link rel="stylesheet" href="wishlist.css">
+</head>
+
+<body>
+  <!-- <header class="header">
+    <div class="logo">Clothique</div>
+    <nav class="nav">
+      <a href="#">Home</a>
+      <a href="#">Sale</a>
+      <a href="#">Pages</a>
+      <a href="#">Get Pro</a>
+    </nav>
+  </header> -->
+
+  <main class="wishlist-container">
+    <h1>Your Wishlist</h1>
+    <div class="wishlist-grid">
+      <!-- Product Card 1 -->
+      <div class="wishlist-item">
+        <a href="/page/product/product.html">
+        <img src="/page/assets/product-large-1.jpg" alt="Product 1">
+       </a>
+        <div class="item-info">
+          <p>Product Item Name</p>
+          <p class="price">
+            <span class="old-price">Rs24.00</span>
+            <span class="new-price">Rs18.00</span>
+            <span class="discount">10% OFF</span>
+          </p>
+          <button onclick="removeItem(this)">Remove</button>
+        </div>
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="wishlist-item">
+        <a href="/page/product/product.html">
+        <img src="/page/assets/product-large-1.jpg" alt="Product 2">
+        </a>
+        <div class="item-info">
+          <p>Product Item Name</p>
+          <p class="price">
+            <span class="old-price">Rs24.00</span>
+            <span class="new-price">Rs18.00</span>
+            <span class="discount">10% OFF</span>
+          </p>
+          <button onclick="removeItem(this)">Remove</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="wishlist.js"></script>
+</body>
+
+</html>

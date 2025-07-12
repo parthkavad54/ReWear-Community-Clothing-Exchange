@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Cart Button -->
+<button id="cartToggle" class="cart-button">🛒 Cart (<span id="cartCount">0</span>)</button>
+
+<!-- Sidebar Cart -->
+<div id="cartSidebar" class="cart-sidebar">
+  <div class="cart-header">
+    <h2>Your Cart</h2>
+    <span id="closeCart" class="close-btn">&times;</span>
+  </div>
+  <div class="cart-items" id="cartItems">
+    <!-- Dynamic items will appear here -->
+  </div>
+  <div class="cart-footer">
+    <p>Total: $<span id="cartTotal">0.00</span></p>
+    <button class="checkout-btn">Checkout</button>
+  </div>
+</div>
+
+<!-- Overlay -->
+<div id="cartOverlay" class="cart-overlay"></div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
